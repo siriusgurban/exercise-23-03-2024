@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 function Count() {
-  const [count, setCount] = useState(22);
+  const [count, setCount] = useState(222);
   const [random, setRandom] = useState(0);
 
   useEffect(() => {
