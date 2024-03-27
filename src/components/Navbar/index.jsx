@@ -25,6 +25,14 @@ function Navbar() {
         >
           Todos
         </li>
+        <li
+          onClick={() => navigate("/count")}
+          style={{
+            color: `${location.pathname == "/count" ? "yellow" : ""}`,
+          }}
+        >
+          Todos
+        </li>
       </ul>
     </nav>
   );

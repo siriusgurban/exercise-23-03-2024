@@ -5,6 +5,7 @@ import MovieCard from "./components/MovieCard";
 import Navbar from "./components/Navbar";
 import NotFound from "./components/NotFound";
 import Todos from "./components/Todos";
+import Count from "./components/Count";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<MovieCard />} />
         <Route path="/todos" element={<Todos />} />
+        <Route path="/count" element={<Count />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
