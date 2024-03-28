@@ -1,15 +1,19 @@
 import { useEffect, useState } from "react";
 
 function Count() {
-  const [count, setCount] = useState(222);
-  const [random, setRandom] = useState(0);
+  const [count, setCount] = useState(22);
+  const [random, setRandom] = useState(1);
 
-  useEffect(() => {
-    setRandom(Math.round(Math.random(10)));
-  }, [count]);
+  // useEffect(() => {
+  //   setRandom(Math.round(Math.random() * 10));
+  //   console.log(Math.round(Math.random() * 10), "random");
+  // }, [count]);
 
   function handleCount() {
-    setCount((prev) => prev * random);
+    setRandom(Math.round(Math.random() * 10) + 1);
+    console.log(random, "rnd");
+    let newNumber = count * random;
+    setCount(newNumber);
   }
 
   return (

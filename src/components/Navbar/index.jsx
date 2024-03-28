@@ -20,7 +20,7 @@ function Navbar() {
         <li
           onClick={() => navigate("/todos")}
           style={{
-            color: `${location.pathname == "/todos" ? "yellow" : ""}`,
+            color: `${location.pathname == "/todos" ? "red" : ""}`,
           }}
         >
           Todos
@@ -28,10 +28,10 @@ function Navbar() {
         <li
           onClick={() => navigate("/count")}
           style={{
-            color: `${location.pathname == "/count" ? "yellow" : ""}`,
+            color: `${location.pathname == "/count" ? "purple" : ""}`,
           }}
         >
-          Todos
+          Count
         </li>
       </ul>
     </nav>
